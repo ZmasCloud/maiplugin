@@ -1,6 +1,4 @@
-# :rocket:
-maiplugin
-:rocket:
+# :rocket:maiplugin:rocket:
 
 #### 介绍
 仅整合麦麦v0.1插件
