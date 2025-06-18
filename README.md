@@ -1,4 +1,6 @@
-# maiplugin
+# :rocket:
+maiplugin
+:rocket:
 
 #### 介绍
 仅整合麦麦v0.1插件
@@ -13,3 +15,4 @@
 #### 请在zip内添加：
 1、插件文件夹（包含插件py文件，__init__.py）
 2、教程文件
+
