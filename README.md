@@ -48,12 +48,6 @@ git push origin main
 提交pr
 等待4位ai审核通过
 
->请确保仓库按照以下目录：
->- 插件目录/  
->  - actions/  
->    - 插件文件.py  
->  - __init__.py  
->>请自行修改markdown格式（对齐）！
 
 ## 当前进度
 - [ ] 适配 v0.2 插件
