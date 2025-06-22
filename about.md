@@ -2,3 +2,5 @@
 |:---------------|:------------------------------|:------------------------------|
 | 麦麦插件生成器 | [github](https://zmascloud.top) | [zmas](https://zmascloud.top)     |
 | bing搜索插件   | [github](https://zmascloud.top) | [zmas](https://zmascloud.top)     |
+| 演示插件   | [github](https://zmascloud.top) | [作者](https://zmascloud.top)     |
+
