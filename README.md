@@ -27,7 +27,7 @@
 >- 插件目录/  
 >  - actions/  
 >    - 插件文件.py  
->  - init.py  
+>  - __init__.py  
 >>请自行修改markdown格式（对齐）！
 
 ## 当前进度
