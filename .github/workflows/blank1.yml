@@ -1,0 +1,27 @@
+name: merge-bot
+
+on:
+  pull_request:
+    types:
+      - labeled
+      - ready_for_review
+      - review_request_removed
+      - review_requested
+      - synchronize
+      - unlabeled
+  pull_request_review:
+    types:
+      - dismissed
+      - submitted
+
+jobs:
+  merge-bot:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: cleanlab/merge-bot@v1.1.0
+        with:
+          dependent_checks: "check1,check2"
+          blocking_label: "block-merge"
+          merge_type: "fast-forward"
+          delete_branch: true
