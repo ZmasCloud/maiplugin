@@ -1,27 +1,20 @@
-name: merge-bot
-
-on:
-  pull_request:
-    types:
-      - labeled
-      - ready_for_review
-      - review_request_removed
-      - review_requested
-      - synchronize
-      - unlabeled
-  pull_request_review:
-    types:
-      - dismissed
-      - submitted
-
-jobs:
-  merge-bot:
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: cleanlab/merge-bot@v1.1.0
-        with:
-          dependent_checks: "check1,check2"
-          blocking_label: "block-merge"
-          merge_type: "fast-forward"
-          delete_branch: true
+            - name: cleanlab/merge-bot
+  # You may pin to the exact commit or the version.
+  # uses: cleanlab/merge-bot@e5be0c746d82ec44814683da622bdf523a10d8a2
+  uses: cleanlab/merge-bot@v1.3.1
+  with:
+    # if reviews are required to merge
+    reviews_required: # optional, default is true
+    # comma separated list of checks to depend on
+    dependent_checks: # optional, default is 
+    # status value(s) for check to be considered passed (as comma separated list)
+    check_status_required: # optional, default is success
+    # label to block merge on (leave empty to disable behavior)
+    blocking_label: # optional, default is 
+    # if should delete source branch of PR after successful merge
+    delete_branch: # optional
+    # type of merge to use (merge or fast-forward)
+    merge_type: merge
+    # token used to access source repository
+    github_token: ${{ secrets.GITHUB_TOKEN }}
+          
