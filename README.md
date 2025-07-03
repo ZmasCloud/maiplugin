@@ -30,9 +30,9 @@
 ```
 >请确保仓库按照以下目录：
 >- 插件目录/  
->  - actions/  
->    - 插件文件.py  
->  - init.py  
+>   - actions/  
+>     - 插件文件.py  
+>   - init.py  
 >>请自行修改markdown格式（对齐）！
 
 提交你的about.md到本地仓库。
